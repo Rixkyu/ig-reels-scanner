@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local screenshots & cache
+found_reels/
+*.png
+*.jpg
+
+# ADB / Scrcpy binaries (jika satu folder)
+*.exe
+*.dll
+scrcpy-server
+scrcpy-noconsole.vbs
+open_a_terminal_here.bat
+find_liked.py
+fix_audio_appops.ps1
+rollback_audio_appops.ps1
+*.txt
+!requirements.txt
+diag/
+epresensi/
+tools/

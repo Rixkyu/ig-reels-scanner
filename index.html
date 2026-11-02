@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="5">
+<title>Instagram Liked Reels Gallery</title>
+<style>
+  body { margin: 0; background: #121212; color: #fff; font-family: -apple-system, sans-serif; padding: 20px; }
+  h1 { font-size: 22px; margin-bottom: 8px; }
+  p { color: #aaa; margin-top: 0; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .card { background: #1e1e1e; border-radius: 12px; overflow: hidden; cursor: pointer; border: 1px solid #2a2a2a; transition: transform 0.15s; }
+  .card:hover { transform: scale(1.02); border-color: #e1306c; }
+  .card img { width: 100%; height: 360px; object-fit: cover; display: block; }
+  .card .meta { padding: 10px; font-size: 13px; font-weight: bold; color: #eee; text-align: center; }
+  #modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; z-index: 100; }
+  #modal img { max-height: 90vh; max-width: 90vw; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h1>Instagram Liked Reels (11 Terverifikasi)</h1>
+<p>Auto-refresh setiap 5 detik.</p>
+<div class="grid">
+  
+        <div class="card" onclick="openModal('found_reels\reel_11.png')">
+            <img src="found_reels\reel_11.png" alt="reel_11.png" loading="lazy">
+            <div class="meta">reel_11.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_10.png')">
+            <img src="found_reels\reel_10.png" alt="reel_10.png" loading="lazy">
+            <div class="meta">reel_10.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_9.png')">
+            <img src="found_reels\reel_9.png" alt="reel_9.png" loading="lazy">
+            <div class="meta">reel_9.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_8.png')">
+            <img src="found_reels\reel_8.png" alt="reel_8.png" loading="lazy">
+            <div class="meta">reel_8.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_7.png')">
+            <img src="found_reels\reel_7.png" alt="reel_7.png" loading="lazy">
+            <div class="meta">reel_7.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_6.png')">
+            <img src="found_reels\reel_6.png" alt="reel_6.png" loading="lazy">
+            <div class="meta">reel_6.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_5.png')">
+            <img src="found_reels\reel_5.png" alt="reel_5.png" loading="lazy">
+            <div class="meta">reel_5.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_4.png')">
+            <img src="found_reels\reel_4.png" alt="reel_4.png" loading="lazy">
+            <div class="meta">reel_4.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_3.png')">
+            <img src="found_reels\reel_3.png" alt="reel_3.png" loading="lazy">
+            <div class="meta">reel_3.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_2.png')">
+            <img src="found_reels\reel_2.png" alt="reel_2.png" loading="lazy">
+            <div class="meta">reel_2.png</div>
+        </div>
+        
+        <div class="card" onclick="openModal('found_reels\reel_1.png')">
+            <img src="found_reels\reel_1.png" alt="reel_1.png" loading="lazy">
+            <div class="meta">reel_1.png</div>
+        </div>
+        
+</div>
+<div id="modal" onclick="this.style.display='none'"><img id="modal-img"></div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').style.display = 'flex';
+}
+</script>
+</body>
+</html>
